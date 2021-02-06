@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minecraft Build</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body class="body_background">
+
+	<center>
+
+	<h2 class="btn-primary">MINECRAFT</h2>
+
+	<div id="head_info" class="btn-danger">
+		<h3>Current Width  = <span id="Current_Width">30</span></h3>
+		<h3>Current Height  = <span id="Current_Height">30</span></h3>
+		<a class="btn btn-info" href="blocks.html" target="_blank">Click to see Blocks</a>
+	</div>
+	<span>
+	<h4><mark>Type a background color for the play area</mark></h3>
+		<label for="colors" id="label">Choose a color:</label>
+
+		<select name="colors" id="dropdown">
+		  <option value="red" >Red</option>
+		  <option value="blue">Blue</option>
+		  <option value="green">Green</option>
+		  <option value="yellow">Yellow</option>
+		</select>
+		<button id="colorbutton"onclick="bgchange()">Submit Color</button>
+</span>
+<canvas id="myCanvas" width="900" height="500"></canvas>
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
